@@ -63,7 +63,7 @@ class App extends React.Component {
       })
     }
   }
-  changeHandle = e =>{
+  changeHandle = e => {
     this.setState({ searchField: e.target.value })
   }
   render() {
@@ -72,7 +72,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <div className="search-bar">
-          <input onChange={this.changeHandle} className="search" type="text"/>
+          <input onChange={this.changeHandle} className="search" type="text" placeholder="search here" />
         </div>
         <div className='allCards'>
           {
@@ -81,8 +81,10 @@ class App extends React.Component {
             })
           }
         </div>
-        <button onClick={this.prev}>Prev</button>
-        <button onClick={this.next}>Next</button>
+        <div className="buttons">
+          <button onClick={this.prev}>Prev</button>
+          <button onClick={this.next}>Next</button>
+        </div>
       </div>
     )
   }

@@ -4,4 +4,31 @@
     align-items: space-evenly;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-bar{
+    width: 250px;
+    margin-bottom: 20px;
+}
+.search{
+    outline: none;
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid lightblue;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttons{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    width: 47%;
 }

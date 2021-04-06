@@ -9,11 +9,19 @@ function Card({ res }) {
     const newName = fUpperCase(name);
     return (
         <div className='card'>
+            <div className="image">
             <img src={sprites.front_default} alt="name" />
+            </div>
+            <div className='name'>
             <h3>Name: {newName}</h3>
+            </div>
+            <div className="id">
             <h4>ID: {id}</h4>
+            </div>
+            <div className="para">
             <p>Exp: {base_experience}, Moves: {moves.length}</p>
-            <a href={`https://pokeapi.co/api/v2/pokemon/${newName}`} target='_blank'>Click for more</a>
+            </div>
+            <a href={`https://pokeapi.co/api/v2/pokemon/${name}`} target='_blank'>Click for more</a>
         </div>
     )
 }
